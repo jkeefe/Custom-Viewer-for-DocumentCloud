@@ -1,3 +1,27 @@
+Statesman document viewer
+=========================
+
+This is a fork of John Keefe's [Custom-Viewer-for-DocumentCloud](https://github.com/jkeefe/Custom-Viewer-for-DocumentCloud) for use with Austin American-Statesman documents.
+
+## How to use
+
+This assumes you've already uploaded your document to [DocumentCloud](https://www.documentcloud.org), filled out all the Document information (under Edit) and made the Access Level: Public Access.
+
+* Go into DocumentCloud and open the document so you are viewing it.
+* Get the part of the url that is between "https://www.documentcloud.org/documents/" and ".html".
+	* If your original url is: https://www.documentcloud.org/documents/1202682-seekingexpertise.html
+	* You want: 1202682-seekingexpertise
+* Add that part of the url to the end of this: http://projects.statesman.com/documents/?doc=
+* So it should look something like this: http://projects.statesman.com/documents/?doc=1202682-seekingexpertise
+
+## Changes we've made
+
+* Added our Austin American-Statesman logo, though it looks pretty damn big
+* Changed the worker url from dc.html to index.html so we can just add the doc param to the end of /documents/
+
+
+--------------------
+
 [originally posted at http://johnkeefe.net/a-customized-viewer-for-documentcloud]
 
 This post is for newsrooms using DocumentCloud, the fantastic document viewer developed by journalist-programmers at ProPublica and The New York Times.
